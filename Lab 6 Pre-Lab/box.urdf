@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<robot name="box">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="top_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+      <origin xyz="0.5 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="right_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+      <origin xyz="0 0 0.5" rpy="1.5708 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="right_to_bottom" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_link"/>
+    <origin xyz="0 0.5 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="back_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+      <origin xyz="0 0 0.5" rpy="1.5708 0 1.5708"/>
+    </visual>
+  </link>
+
+  <joint name="back_to_bottom" type="fixed">
+    <parent link="base_link"/>
+    <child link="back_link"/>
+    <origin xyz="-0.5 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="left_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="yellow">
+        <color rgba="1 1 0 1"/>
+      </material>
+      <origin xyz="0 0 0.5" rpy="1.5708 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="left_to_bottom" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_link"/>
+    <origin xyz="0 -0.5 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="front_link">
+    <visual>
+      <geometry>
+        <box size="1 1 0.05"/>
+      </geometry>
+      <material name="orange">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+      <origin xyz="0 0 0.5" rpy="1.5708 0 1.5708"/>
+    </visual>
+  </link>
+
+  <joint name="front_to_bottom" type="fixed">
+    <parent link="base_link"/>
+    <child link="front_link"/>
+    <origin xyz="0.5 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="top_to_back" type="revolute">
+    <axis rpy="0 0 0" xyz="0 -1 0"/>
+    <parent link="back_link"/>
+    <child link="top_link"/>
+    <limit effort="1000.0" lower="0" upper="1.57" velocity="0.5"/>
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+  </joint>
+
+</robot>
