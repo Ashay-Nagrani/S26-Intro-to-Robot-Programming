@@ -39,7 +39,7 @@ test_pattern_publisher:
     #
     # Each square size is automatically computed as:
     # cell_size = canvas_size / grid_size
-    canvas_size: 0.9
+    canvas_size: 0.07
 
 
     # ======================================================
@@ -55,7 +55,7 @@ test_pattern_publisher:
     # 0.25 = faster but less precise
     #
     # Adjust this during calibration testing.
-    cell_speed: 0.15
+    cell_speed: 0.07
 
 
     # ======================================================
@@ -79,4 +79,4 @@ test_pattern_publisher:
     # Smaller value = smoother timing but higher CPU usage
     # Recommended range:
     # 0.05 to 0.20
-    timer_period: 0.1
+    timer_period: 0.5
