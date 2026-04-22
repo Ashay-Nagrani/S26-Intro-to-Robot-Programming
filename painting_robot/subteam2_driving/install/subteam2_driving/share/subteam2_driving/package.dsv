@@ -1,0 +1,6 @@
+source;share/subteam2_driving/hook/pythonpath.ps1
+source;share/subteam2_driving/hook/pythonpath.dsv
+source;share/subteam2_driving/hook/pythonpath.sh
+source;share/subteam2_driving/hook/ament_prefix_path.ps1
+source;share/subteam2_driving/hook/ament_prefix_path.dsv
+source;share/subteam2_driving/hook/ament_prefix_path.sh

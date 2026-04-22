@@ -1,0 +1,82 @@
+# ==========================================================
+# Subteam 2 Driving Parameters Configuration File
+# File: driving_params.yaml
+#
+# This file controls motion behavior for the grid painting robot.
+# Edit values here instead of editing Python code.
+#
+# Units:
+# distance = meters
+# speed = meters per second
+# time = seconds
+# ==========================================================
+
+
+test_pattern_publisher:
+
+  ros__parameters:
+
+
+    # ======================================================
+    # GRID SETTINGS
+    # ======================================================
+
+    # Number of squares per side of the painting grid.
+    #
+    # Example:
+    # 3 = 3x3 grid
+    # 4 = 4x4 grid
+    # 5 = 5x5 grid
+    #
+    # This determines how many movement steps the robot performs.
+    grid_size: 3
+
+
+    # Total side length of the painting canvas.
+    #
+    # Example:
+    # 0.9 means the painting area is 0.9m × 0.9m
+    #
+    # Each square size is automatically computed as:
+    # cell_size = canvas_size / grid_size
+    canvas_size: 0.9
+
+
+    # ======================================================
+    # MOTION SETTINGS
+    # ======================================================
+
+    # Robot movement speed when traveling between grid squares.
+    #
+    # Units: meters per second
+    #
+    # Example:
+    # 0.15 = slower and more accurate
+    # 0.25 = faster but less precise
+    #
+    # Adjust this during calibration testing.
+    cell_speed: 0.15
+
+
+    # ======================================================
+    # TIMING SETTINGS
+    # ======================================================
+
+    # How long the robot pauses at each grid point.
+    #
+    # Units: seconds
+    #
+    # Helps camera exposure capture clean transitions.
+    #
+    # Increase if motion blur appears at corners.
+    stop_duration: 1.0
+
+
+    # Internal update frequency of the motion controller.
+    #
+    # Units: seconds per update cycle
+    #
+    # Smaller value = smoother timing but higher CPU usage
+    # Recommended range:
+    # 0.05 to 0.20
+    timer_period: 0.1

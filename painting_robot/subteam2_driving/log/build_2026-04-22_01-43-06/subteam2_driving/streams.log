@@ -1,0 +1,27 @@
+[0.894s] Invoking command in '/home/yahboom/Desktop/painting_robot/subteam2_driving': PYTHONPATH=/home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/prefix_override:/home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/subteam2_driving build --build-base /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build install --record /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/install.log --single-version-externally-managed install_data
+[1.065s] running egg_info
+[1.068s] writing build/subteam2_driving/subteam2_driving.egg-info/PKG-INFO
+[1.074s] writing dependency_links to build/subteam2_driving/subteam2_driving.egg-info/dependency_links.txt
+[1.075s] writing entry points to build/subteam2_driving/subteam2_driving.egg-info/entry_points.txt
+[1.075s] writing requirements to build/subteam2_driving/subteam2_driving.egg-info/requires.txt
+[1.075s] writing top-level names to build/subteam2_driving/subteam2_driving.egg-info/top_level.txt
+[1.078s] reading manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+[1.079s] writing manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+[1.081s] running build
+[1.081s] running build_py
+[1.081s] copying subteam2_driving/stop_reset_service.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+[1.081s] running install
+[1.081s] running install_lib
+[1.081s] copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/stop_reset_service.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+[1.082s] byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/stop_reset_service.py to stop_reset_service.cpython-310.pyc
+[1.084s] running install_data
+[1.084s] copying package.xml -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/subteam2_driving
+[1.084s] running install_egg_info
+[1.085s] removing '/home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving-0.0.0-py3.10.egg-info' (and everything under it)
+[1.085s] Copying build/subteam2_driving/subteam2_driving.egg-info to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving-0.0.0-py3.10.egg-info
+[1.085s] running install_scripts
+[1.124s] Installing drive_controller script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+[1.125s] Installing stop_reset_service script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+[1.125s] Installing test_pattern script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+[1.126s] writing list of installed files to '/home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/install.log'
+[1.157s] Invoked command in '/home/yahboom/Desktop/painting_robot/subteam2_driving' returned '0': PYTHONPATH=/home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/prefix_override:/home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/subteam2_driving build --build-base /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build install --record /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/install.log --single-version-externally-managed install_data

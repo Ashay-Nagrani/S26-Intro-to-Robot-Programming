@@ -1,0 +1,44 @@
+running egg_info
+creating build/subteam2_driving/subteam2_driving.egg-info
+writing build/subteam2_driving/subteam2_driving.egg-info/PKG-INFO
+writing dependency_links to build/subteam2_driving/subteam2_driving.egg-info/dependency_links.txt
+writing entry points to build/subteam2_driving/subteam2_driving.egg-info/entry_points.txt
+writing requirements to build/subteam2_driving/subteam2_driving.egg-info/requires.txt
+writing top-level names to build/subteam2_driving/subteam2_driving.egg-info/top_level.txt
+writing manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+reading manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+writing manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+copying subteam2_driving/stop_reset_service.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+copying subteam2_driving/motion_helpers.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+copying subteam2_driving/test_pattern.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+copying subteam2_driving/__init__.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+copying subteam2_driving/drive_controller.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+running install
+running install_lib
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/stop_reset_service.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/motion_helpers.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/test_pattern.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/__init__.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/drive_controller.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/stop_reset_service.py to stop_reset_service.cpython-310.pyc
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/motion_helpers.py to motion_helpers.cpython-310.pyc
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/test_pattern.py to test_pattern.cpython-310.pyc
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/drive_controller.py to drive_controller.cpython-310.pyc
+running install_data
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/ament_index
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/ament_index/resource_index
+creating /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/ament_index/resource_index/packages
+copying resource/subteam2_driving -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/ament_index/resource_index/packages
+copying package.xml -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/share/subteam2_driving
+running install_egg_info
+Copying build/subteam2_driving/subteam2_driving.egg-info to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving-0.0.0-py3.10.egg-info
+running install_scripts
+Installing drive_controller script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+writing list of installed files to '/home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/install.log'

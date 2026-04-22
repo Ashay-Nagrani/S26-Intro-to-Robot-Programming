@@ -1,0 +1,23 @@
+running egg_info
+writing build/subteam2_driving/subteam2_driving.egg-info/PKG-INFO
+writing dependency_links to build/subteam2_driving/subteam2_driving.egg-info/dependency_links.txt
+writing entry points to build/subteam2_driving/subteam2_driving.egg-info/entry_points.txt
+writing requirements to build/subteam2_driving/subteam2_driving.egg-info/requires.txt
+writing top-level names to build/subteam2_driving/subteam2_driving.egg-info/top_level.txt
+reading manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+writing manifest file 'build/subteam2_driving/subteam2_driving.egg-info/SOURCES.txt'
+running build
+running build_py
+copying subteam2_driving/test_pattern.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving
+running install
+running install_lib
+copying /home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/build/lib/subteam2_driving/test_pattern.py -> /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving
+byte-compiling /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving/test_pattern.py to test_pattern.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/subteam2_driving/subteam2_driving.egg-info to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/python3.10/site-packages/subteam2_driving-0.0.0-py3.10.egg-info
+running install_scripts
+Installing drive_controller script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+Installing test_pattern script to /home/yahboom/Desktop/painting_robot/subteam2_driving/install/subteam2_driving/lib/subteam2_driving
+writing list of installed files to '/home/yahboom/Desktop/painting_robot/subteam2_driving/build/subteam2_driving/install.log'

@@ -1,0 +1,5 @@
+[console_scripts]
+drive_controller = subteam2_driving.drive_controller:main
+stop_reset_service = subteam2_driving.stop_reset_service:main
+test_pattern = subteam2_driving.test_pattern:main
+
