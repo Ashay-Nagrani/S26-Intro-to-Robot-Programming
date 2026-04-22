@@ -39,7 +39,7 @@ test_pattern_publisher:
     #
     # Each square size is automatically computed as:
     # cell_size = canvas_size / grid_size
-    canvas_size: 0.07
+    canvas_size: 0.35
 
 
     # ======================================================
