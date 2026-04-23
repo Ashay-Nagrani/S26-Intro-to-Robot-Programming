@@ -8,11 +8,11 @@ Main driving node for Subteam 2.
 What this node does:
 - Subscribes to /cmd_vel_raw  (receives raw commands from test_pattern.py)
 - Clamps values to safe speed limits
-- Publishes safe commands to /cmd_vel  (the Yahboom robot hardware topic)
+- Publishes safe commands to /raspbot/cmd_vel  (the Yahboom robot hardware topic)
 - Sends a stop command when shut down with Ctrl+C
  
 Topic flow:
-    test_pattern  -->  /cmd_vel_raw  -->  drive_controller  -->  /cmd_vel  -->  robot motors
+    test_pattern --> /cmd_vel_raw --> drive_controller --> /raspbot/cmd_vel --> robot motors
 """
  
 import rclpy
@@ -41,17 +41,17 @@ class DriveController(Node):
  
         # ----------------------------------------------------------
         # Publisher -> sends safe commands TO the robot hardware
-        # /cmd_vel is the topic the Yahboom driver listens on
+        # /raspbot/cmd_vel is the topic the Yahboom driver listens on
         # ----------------------------------------------------------
         self.motor_publisher = self.create_publisher(
             Twist,
-            '/cmd_vel',
+            '/raspbot/cmd_vel',
             10
         )
  
         # ----------------------------------------------------------
         # Subscriber -> receives raw commands FROM test_pattern.py
-        # /cmd_vel_raw is a separate topic so there is no feedback loop
+        # /cmd_vel_raw is separate from the hardware topic to avoid loops
         # ----------------------------------------------------------
         self.cmd_vel_subscriber = self.create_subscription(
             Twist,
@@ -62,7 +62,7 @@ class DriveController(Node):
  
         self.get_logger().info('Drive Controller node has started.')
         self.get_logger().info('Subscribing to: /cmd_vel_raw')
-        self.get_logger().info('Publishing to:  /cmd_vel')
+        self.get_logger().info('Publishing to:  /raspbot/cmd_vel')
  
     def cmd_vel_callback(self, msg):
         """
