@@ -9,7 +9,7 @@ What this node does:
 - Starts a ROS2 node called drive_controller
 - Subscribes to /cmd_vel (receives Twist messages from test_pattern.py)
 - Clamps incoming velocity values to safe limits
-- Forwards the safe commands to /raspbot/cmd_vel (the actual Raspbot hardware topic)
+- Forwards the safe commands to /cmd_vel (the actual Raspbot hardware topic)
 - Logs all motion and stop events
 - Provides stop/reset via services (handled by stop_reset_service.py)
 """
@@ -24,7 +24,7 @@ from subteam2_driving.motion_helpers import clamp_value, is_stop_command, format
 class DriveController(Node):
     """
     Main ROS2 node for robot driving.
-    Bridges /cmd_vel (planning side) -> /raspbot/cmd_vel (hardware side).
+    Bridges /cmd_vel (planning side) -> /cmd_vel (hardware side).
     """
 
     def __init__(self):
@@ -45,13 +45,11 @@ class DriveController(Node):
         # ----------------------------------------------------------
         # Publisher -> sends commands TO the real Raspbot hardware
         # ----------------------------------------------------------
-        # NOTE: /raspbot/cmd_vel is the topic the Raspbot V2 driver listens on.
-        # If your robot doesn't move, run `ros2 topic list` while the robot
         # driver is running and find the correct motor command topic.
-        # Then replace '/raspbot/cmd_vel' below with that topic name.
+        # Then replace '/cmd_vel' below with that topic name.
         self.motor_publisher = self.create_publisher(
             Twist,
-            '/raspbot/cmd_vel',
+            '/cmd_vel',
             10
         )
 
@@ -67,7 +65,7 @@ class DriveController(Node):
 
         self.get_logger().info('Drive Controller node has started.')
         self.get_logger().info('Subscribing to: /cmd_vel')
-        self.get_logger().info('Publishing to:  /raspbot/cmd_vel')
+        self.get_logger().info('Publishing to:  /cmd_vel')
 
     def cmd_vel_callback(self, msg):
         """
