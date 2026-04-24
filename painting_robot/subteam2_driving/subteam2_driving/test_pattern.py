@@ -164,8 +164,8 @@ class TestPatternPublisher(Node):
             self.get_logger().info(f'Moving +grid_x: {current_point} -> {next_point}')
  
         elif dx == -1 and dy == 0:
-            # Move one cell in negative grid x direction
-            msg.linear.y = -self.cell_speed
+            # Move one cell in positive grid x direction
+            msg.linear.y = self.cell_speed
             self.get_logger().info(f'Moving -grid_x: {current_point} -> {next_point}')
  
         else:
