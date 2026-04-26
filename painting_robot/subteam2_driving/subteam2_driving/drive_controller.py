@@ -30,8 +30,8 @@ class DriveController(Node):
         # ----------------------------------------------------------
         # Parameters - loaded from YAML or use defaults
         # ----------------------------------------------------------
-        self.declare_parameter('max_linear_speed', 1.0)
-        self.declare_parameter('max_angular_speed', 1.0)
+        self.declare_parameter('max_linear_speed', 15.0)
+        self.declare_parameter('max_angular_speed', 15.0)
  
         self.max_linear_speed = self.get_parameter('max_linear_speed').value
         self.max_angular_speed = self.get_parameter('max_angular_speed').value
