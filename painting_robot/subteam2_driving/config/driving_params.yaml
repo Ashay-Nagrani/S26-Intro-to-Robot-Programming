@@ -55,7 +55,7 @@ test_pattern_publisher:
     # 0.25 = faster but less precise
     #
     # Adjust this during calibration testing.
-    cell_speed: 0.15
+    cell_speed: 0.5
 
 
     # ======================================================
