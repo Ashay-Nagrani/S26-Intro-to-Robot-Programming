@@ -79,4 +79,4 @@ test_pattern_publisher:
     # Smaller value = smoother timing but higher CPU usage
     # Recommended range:
     # 0.05 to 0.20
-    timer_period: 0.5
+    timer_period: 0.05
